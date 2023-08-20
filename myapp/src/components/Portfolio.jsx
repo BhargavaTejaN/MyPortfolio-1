@@ -1,48 +1,55 @@
 import React from "react";
 import promptopia from "../assets/portfolio/promptopia.jpg";
-import jobbyApp from "../assets/portfolio/jobbyApp.jpg";
-import nxtWatch from "../assets/portfolio/nxtWatch.jpg";
+import threads from "../assets/portfolio/threads.jpg";
+import youtubeClone from "../assets/portfolio/youtubeClone.jpg";
 import carhub from "../assets/portfolio/carhub.jpg";
-import shopping from "../assets/portfolio/shopping.jpg";
-import digitalTimer from "../assets/portfolio/digitalTimer.jpg";
+import pokemon from "../assets/portfolio/pokemon.jpg";
+import fileManager from "../assets/portfolio/fileManager.jpg";
 
 const portfolios = [
   {
     id: 1,
+    src: threads,
+    demoLink: "https://threads-sand-one.vercel.app/",
+    codeLink:
+      "https://github.com/BhargavaTejaN/Threads/tree/main/myapp",
+      title: `Threads`,
+  },
+  {
+    id: 2,
+    src: pokemon,
+    demoLink: "https://64d3a9c31932317737f1045a--cozy-mermaid-bd647c.netlify.app/pokemon/1",
+    codeLink: "https://github.com/BhargavaTejaN/Pokemon/tree/main/myapp",
+    title: `Pokémon`,
+  },
+  {
+    id: 3,
+    src: fileManager,
+    demoLink: "https://cloud-file-manager-lime.vercel.app/",
+    codeLink: "https://github.com/BhargavaTejaN/cloud-file-manager/tree/main/myapp",
+    title: `File Manager`,
+  },
+    {
+    id: 4,
     src: promptopia,
     demoLink: "https://propmtopia-nextjs.vercel.app/",
     codeLink:
       "https://github.com/BhargavaTejaN/Promptopia-crud-nextjs/tree/main/myapp",
-  },
-  {
-    id: 2,
-    src: carhub,
-    demoLink: "https://car-showcase-ecru-eta.vercel.app/",
-    codeLink: "https://github.com/BhargavaTejaN/car-showcase/tree/main/myapp",
-  },
-  {
-    id: 3,
-    src: nxtWatch,
-    demoLink: "https://utubeclone.ccbp.tech/login",
-    codeLink: "https://github.com/BhargavaTejaN/YouTubeClone-NXTWatch/tree/main/myapp",
-  },
-  {
-    id: 4,
-    src: shopping,
-    demoLink: "https://shoppingcloneap.ccbp.tech/login",
-    codeLink: "https://github.com/BhargavaTejaN/Shopping-App/tree/main/myapp",
+      title : `Promptopia`
   },
   {
     id: 5,
-    src: jobbyApp,
-    demoLink: "https://jobyapp.ccbp.tech/login",
-    codeLink: "https://github.com/BhargavaTejaN/JobbyApp/tree/main/myapp",
+    src: carhub,
+    demoLink: "https://car-showcase-ecru-eta.vercel.app/",
+    codeLink: "https://github.com/BhargavaTejaN/car-showcase/tree/main/myapp",
+    title:`Car Showcase`,
   },
   {
     id: 6,
-    src: digitalTimer,
-    demoLink: "https://stopwatchdigitl.ccbp.tech/",
-    codeLink: "https://github.com/BhargavaTejaN/DigitalTimerApp/tree/main/my-app",
+    src: youtubeClone,
+    demoLink: "https://classy-mousse-f9c6ff.netlify.app/",
+    codeLink: "https://github.com/BhargavaTejaN/youtube-clone/tree/main/myapp",
+    title:"Youtube Clone"
   },
 ];
 
@@ -70,7 +77,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demoLink, codeLink }) => (
+          {portfolios.map(({ id, src, demoLink, codeLink, title }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -85,6 +92,7 @@ const Portfolio = () => {
                   Code
                 </button>
               </div>
+              <h1 style={{textAlign : "center"}}>{title}</h1>
             </div>
           ))}
         </div>
