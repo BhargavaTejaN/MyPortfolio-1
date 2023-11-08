@@ -13,8 +13,8 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-          I am a dedicated and results-driven Software Engineer with over 1 year
-          of experience,in Organization Temenos. Experienced Software Engineer
+          I am a dedicated and results-driven ReactJs Developer with over 1 year
+          of experience,in Organization Temenos. Experienced ReactJs Developer
           with expertise in Temenos and 1+ year of hands-on experience. Skilled
           in React.js, Nextjs, Redux-Toolkit, JavaScript, and TypeScript.
           Proficient in building user-friendly websites and applications,
